@@ -1,7 +1,7 @@
 Scenario(Timestamp):
   constants:
     now: ${now()}
-    then: ${nextHour()}
+    then: ${nextMinute()}
   interactions:
   - description: get current time millis
     request:
