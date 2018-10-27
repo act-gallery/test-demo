@@ -1,0 +1,14 @@
+Scenario(Timestamp):
+  constants:
+    now: ${now()}
+    then: ${nextHour()}
+  interactions:
+  - description: get current time millis
+    request:
+      method: GET
+      url: /ts
+    response:
+      json:
+        result:
+          - after: ${now}
+          - before: ${then}
