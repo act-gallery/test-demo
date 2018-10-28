@@ -25,12 +25,20 @@ import act.controller.Controller;
 import org.osgl.$;
 import org.osgl.mvc.annotation.GetAction;
 
+import java.util.List;
+import javax.validation.constraints.Min;
+
 @SuppressWarnings("unused")
 public class AppEntry extends Controller.Util {
 
     @GetAction("ts")
     public long timestamp() {
         return $.ms();
+    }
+
+    @GetAction("fs")
+    public List<Integer> fibonacciSeries(@Min(2) int max) {
+        return Util.loadFibonacciSeries(max);
     }
 
     public static void main(String[] args) throws Exception {

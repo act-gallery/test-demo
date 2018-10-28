@@ -1,0 +1,12 @@
+Scenario(Fibonacci):
+  constants:
+    expected: ${fs(16)}
+  interactions:
+    - description: load fibonacciSeries
+      request:
+        get: /fs?max=16
+      response:
+        json:
+          me:
+            - eq: ${expected}
+            - fs: 16
