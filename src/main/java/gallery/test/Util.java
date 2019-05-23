@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Util {
 
-    public static class FibonacciFunc extends Func<FibonacciFunc> {
+    public static class FibonacciFunc extends Func {
 
         private int max;
 
@@ -31,7 +31,7 @@ public class Util {
         }
     }
 
-    public static class FibonacciVerifier extends Verifier<FibonacciVerifier> {
+    public static class FibonacciVerifier extends Verifier {
 
         private List<Integer> expected;
 

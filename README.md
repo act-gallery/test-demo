@@ -1,6 +1,6 @@
 # ActFramework Automate Test Demo
 
-This application demonstrates how to write automate test scenario
+This application demonstrates how to write custom test function and test verifier.
 
 ## Start the application
 
